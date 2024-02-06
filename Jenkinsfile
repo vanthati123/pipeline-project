@@ -52,7 +52,7 @@ pipeline {
         }
         stage('Stage-9 : Deployment - Deploy a Artifact cloudbinay-3.6.3-SNAPSHOT.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:redhat@123 -T target/**.war "http://54.90.133.194:8080/manager/text/deploy?path=/cloudbinary&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://52.87.203.21:8080//manager/text/deploy?path=/cloudbinary&update=true"'
             }
         }
         stage('Stage-10 : SmokeTest') { 
